@@ -9,7 +9,7 @@ public class MedEdit extends JFrame implements ActionListener {
     // JDBC URL, username, and password of MySQL server
     private static final String JDBC_URL = "jdbc:mysql://localhost:3306/scai";
     private static final String USERNAME = "root";
-    private static final String PASSWORD = "chrisjohn98";
+    private static final String PASSWORD = "ENTER PASSWORD HERE";
 
     private JTextField userIdField, medNameField, dosageField, typeField, timeField;
     private JButton insertButton, viewButton;
