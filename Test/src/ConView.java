@@ -46,7 +46,7 @@ public class ConView extends JFrame {
 
     private boolean validateUser(String username, String password) {
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/scai", "root", "chrisjohn98");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/scai", "root", "ENTER PASSWORD HERE");
             String query = "SELECT * FROM user WHERE name=? AND password=?";
             PreparedStatement pst = conn.prepareStatement(query);
             pst.setString(1, username);
