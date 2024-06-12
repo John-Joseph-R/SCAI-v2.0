@@ -45,7 +45,7 @@ public class MedView extends JFrame {
         String password = new String(passwordField.getPassword());
     
         try {
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/scai", "root", "chrisjohn98");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/scai", "root", "ENTER PASSWORD HERE");
             String query = "SELECT UserID FROM user WHERE name=? AND password=?";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, name);
